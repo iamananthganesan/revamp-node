@@ -1,3 +1,5 @@
+#DAY-3
+
 #Prisma is ORM Object Relational Mapping
 
 create a folder with prisma 
@@ -15,6 +17,7 @@ please check the neon db tables.
 We preffered Neon DB
 https://console.neon.tech/app/projects/sparkling-forest-28998972/branches/br-lucky-leaf-a18ofa3e/tables?database=neondb
 
+#DAY -4
 
 Steps
 1.Schema designs
@@ -33,5 +36,40 @@ Steps
 
     4.npx prisma studio
         gives you the UI where you can see the model details which will be runnning in the port http:localhost:5555
-        
+
+#DAY-5 - 06/16
+    Restaurant app
+    step 1 -> scehma design
+    step 2 API creation
+    step 3
+    infra ready 
+
+    schema -> migrate npx prisma migrate dev 
+
+    migration_name example init 
+
+#DAY-6 06/17
+    /login
+    /register
+    1.Schema design
+        model UserDetails {
+            userId String @id default(uuid())
+            email String
+            password String
+        }
+    2.API creation
+        we've use bcrypy library to hash the password with saltRound
+        https://www.npmjs.com/package/bcrypt
+        v1/api/register
+            # Need to validate the email id wheather its exist or not
+            # if Not existed we need to hash the password     
+            # then we need to insert a record to userDetails table
+    /refresh
+    /public/protected routes
+    /middleware
+Model User
+user_id
+user_name
+#DAY-7
+#DAY-8
 

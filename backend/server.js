@@ -2,6 +2,7 @@
 const express = require("express");
 const { productsRouter } = require("./routes/products.route");
 const { studentsRouter } = require("./routes/students.route");
+const { registerRouter } = require("./routes/register.route");
 //CREATING INSTANCE FOR EXPRESS
 const app = express();
 //CREATING A PORT FOR THE SERVER
@@ -16,6 +17,8 @@ app.use("/v1/api", productsRouter);
 //STUDENTS MANAGEMENT SYSTEM
 app.use("/v1/api", studentsRouter);
 
+//AUTH
+app.use("/v1/api", registerRouter);
 //CREATED NODE SERVER AND ITS UP & RUNNING IN PORT = 3000
 app.listen(PORT, () => {
   console.log(`Server is running in ${PORT}`);
