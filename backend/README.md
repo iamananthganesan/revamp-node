@@ -70,6 +70,18 @@ Steps
 Model User
 user_id
 user_name
-#DAY-7
+#DAY-7 06/18
+    login API
+
+    MIDDLEWARE   - NOTHING BUT an function
+
+    core middleware app.use(express.json()) //parser
+    custom middleware - auth middleware, RBAC middleware, 
+    3rd party middleware  app.use(morgon()) //logger ,
+
 #DAY-8
+
+#DAY-9
+
+#DAY-10
 

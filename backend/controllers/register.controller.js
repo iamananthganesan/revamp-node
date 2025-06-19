@@ -3,12 +3,11 @@ const { Prisma, PrismaClient } = require("@prisma/client");
 
 const prisma = new PrismaClient();
 
-const register = async (req, res) => {
+const register = async (req, res) => {    
   try {
-    prisma.$connect();
+    prisma.$connect();    
     const { user_id, email, password } = req.body;
-    // VALIDATE THE USER EMAIL IYTS EXISITING OR NOT
-    console.log(prisma.userDetails);
+    // VALIDATE THE USER EMAIL IYTS EXISITING OR NOT    
     const userExist = await prisma.userDetails.findUnique({
       where: {
         email,
