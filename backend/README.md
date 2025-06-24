@@ -83,5 +83,45 @@ user_name
 
 #DAY-9
 
-#DAY-10
+#DAY-10 06/23
+E-Comm
+
+Step-1
+prismalister.app
+    Creating schema for the Producer API
+
+        model Product {
+            product_id String @if @default(uuid())
+            title string
+            description  String
+            category String
+            price   String
+            rating String
+            thumbnail String
+            brand      String    
+        }
+Step - 2 
+    -Neon DB
+        Databasde connection
+    -copy the schema or run npx prisma generate command to get the schema.prisma code 
+Step - 3 
+    npm init
+        backend
+            npm i express, nodemon, primsa, prismaclient
+
+            create controller and routes for the producer list api 
+
+            then using ai add product using prisma seed 
+
+            -schema
+                seed
+                    seed.js
+
+Deployment
+    Render
+        server-less(infra is handles by company)
+    render.com
+        Uptime
+            to make your api hit in time interval 
+
 
