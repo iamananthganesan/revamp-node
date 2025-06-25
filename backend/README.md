@@ -120,6 +120,17 @@ Step - 3
 Deployment
     Render
         server-less(infra is handles by company)
+        https://dashboard.render.com/web/new?newUser=true
+        server vs server less
+            - server both wil have servers
+                Server we need to take care of complete infra for an application where as server less 
+                we no need to worried about the infra setups
+
+            -since this render deployment 
+            if the api's are not active they will off the instance lets say if anyone hitting the api initially it will take 50s to get response 
+            to get rid of this we can make a use of uptime http://uptimerobot.com/
+
+            for monitoring your application    
     render.com
         Uptime
             to make your api hit in time interval 
